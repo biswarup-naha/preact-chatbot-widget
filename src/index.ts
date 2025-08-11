@@ -2,7 +2,7 @@ import habitat from 'preact-habitat';
 import App from './component';
 import { h, render } from 'preact';
 
-
+document.addEventListener('DOMContentLoaded', function () {
 const root = document.getElementById('root');
 root.attachShadow({ mode: 'open' });
 
@@ -62,4 +62,5 @@ root.shadowRoot.appendChild(style);
 //   clean: true
 // });
 
-render(h(App,null), document.body);
+render(h(App, null), document.body);
+});
