@@ -14,7 +14,6 @@ export default function App(props: Props): VNode {
     return (
         <Fragment>
             {showDialog && <Dialog onClose={toggleDialog} />}
-            {/* <Dialog onClose={toggleDialog} /> */}
             <Widget onClick={toggleDialog} />
         </Fragment>
     );
