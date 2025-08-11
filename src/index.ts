@@ -1,9 +1,9 @@
-import habitat from 'preact-habitat';
+// import habitat from 'preact-habitat';
 import App from './component';
 import { h, render } from 'preact';
 
 document.addEventListener('DOMContentLoaded', function () {
-const root = document.getElementById('root');
+const root = document.getElementById('shadow-root');
 root.attachShadow({ mode: 'open' });
 
 const style = document.createElement('style');
@@ -58,9 +58,9 @@ root.shadowRoot.appendChild(style);
 // const _habitat = habitat(App);
 
 // _habitat.render({
-//   selector: '[data-widget-host="habitat"]',
-//   clean: true
-// });
-
-render(h(App, null), document.body);
+// 	selector: '[data-widget-host="habitat"]',
+// 	clean: true,
+	// });
+render(h(App,null), root.shadowRoot);
+	
 });

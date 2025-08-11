@@ -1,6 +1,6 @@
 import { Fragment, h, VNode } from 'preact';
 import { useState } from 'preact/hooks';
-import './style.css';
+// import './style.css';
 
 interface Props {
 }
@@ -21,12 +21,12 @@ export default function App(props: Props): VNode {
 }
 
 
-const Widget = ({ onClick }) => (
+const Widget = ({ onClick }):VNode => (
     <div class="widget" onClick={onClick}>
     </div>
 );
 
-const Dialog = ({ onClose }) => (
+const Dialog = ({ onClose }):VNode => (
     <div class="chatbox" onClick={onClose}>
     </div>
 );
